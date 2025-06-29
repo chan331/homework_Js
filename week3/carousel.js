@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pageNumber = document.querySelector(".carousel-slide-number");
 
   let currentIndex = 0;
-  const SLIDE_PER_PAGE = 1;
+  const SLIDE_PER_PAGE = 2;
   const totalSlides = slides.length;
   const totalPages = Math.ceil(totalSlides / SLIDE_PER_PAGE);
 
