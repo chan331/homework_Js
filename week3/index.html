@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <title>3주차 컴포넌트 기능 구현현</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div>
+        <a href="#" class="recommend-game-link">
+          <img
+            src="./assets/recommedGameIcon.png"
+            alt="추천 게임 아이콘"
+            class="recommend-game-icon"
+          />
+          <div class="recommend-game-text">추천 게임</div>
+          <svg
+            width="7"
+            height="12"
+            viewBox="0 0 9 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.79297 0.29297C1.18349 -0.0975548 1.81651 -0.0975548 2.20703 0.29297L8.20703 6.29297C8.59756 6.68349 8.59756 7.31651 8.20703 7.70703L2.20703 13.707C1.81651 14.0976 1.18349 14.0976 0.79297 13.707C0.402445 13.3165 0.402445 12.6835 0.79297 12.293L6.08594 7L0.79297 1.70703C0.402445 1.31651 0.402445 0.683494 0.79297 0.29297Z"
+              fill="#858585"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-slider">
+          <!-- 슬라이드는 데이터에 따라 동적으로 생성. -->
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button
+          class="carousel-button carousel-button-prev"
+          aria-label="이전 슬라이드"
+        >
+          <svg
+            width="8"
+            height="14"
+            viewBox="0 0 9 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.20703 0.29297C7.81651 -0.0975548 7.18349 -0.0975548 6.79297 0.29297L0.792968 6.29297C0.402444 6.68349 0.402444 7.31651 0.792968 7.70703L6.79297 13.707C7.18349 14.0976 7.81651 14.0976 8.20703 13.707C8.59755 13.3165 8.59755 12.6835 8.20703 12.293L2.91406 7L8.20703 1.70703C8.59755 1.31651 8.59755 0.683494 8.20703 0.29297Z"
+              fill="#474747"
+            />
+          </svg>
+        </button>
+        <div class="carousel-slide-number"></div>
+        <button
+          class="carousel-button carousel-button-next"
+          aria-label="다음 슬라이드"
+        >
+          <svg
+            width="8"
+            height="14"
+            viewBox="0 0 9 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.79297 0.29297C1.18349 -0.0975548 1.81651 -0.0975548 2.20703 0.29297L8.20703 6.29297C8.59756 6.68349 8.59756 7.31651 8.20703 7.70703L2.20703 13.707C1.81651 14.0976 1.18349 14.0976 0.79297 13.707C0.402445 13.3165 0.402445 12.6835 0.79297 12.293L6.08594 7L0.79297 1.70703C0.402445 1.31651 0.402445 0.683494 0.79297 0.29297Z"
+              fill="#474747"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./carousel.js" defer></script>
+  </body>
+</html>

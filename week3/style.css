@@ -1,0 +1,162 @@
+body {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e4dfdf;
+}
+
+.carousel {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+
+  .carousel-title {
+    display: flex;
+  }
+
+  .recommend-game-link {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 6px;
+    background: none;
+    border: none;
+    padding-inline: 12px;
+    padding-block: 6px;
+    margin-left: 10px;
+    margin-block: 14px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #000000;
+
+    &:hover {
+      background: #00000014;
+    }
+
+    .recommend-game-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+  }
+
+  .carousel-container {
+    overflow: hidden;
+    margin-inline: 24px;
+  }
+
+  .carousel-slider {
+    display: inline-flex;
+    padding-block: 3px;
+    gap: 16px;
+    transition: transform 0.3s ease-in-out;
+
+    .carousel-slide {
+      cursor: pointer;
+      display: flex;
+      width: 160px;
+      flex-direction: column;
+      gap: 8px;
+
+      .carousel-slide-link {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      &:hover .carousel-slide-img-character {
+        transform: scale(1.02);
+      }
+
+      &:hover .carousel-slide-description h2,
+      &:hover .carousel-slide-description-subtitle {
+        color: #4a4a4a;
+      }
+
+      .carousel-slide-img {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding-top: 12px;
+        border-radius: 8px;
+
+        .carousel-slide-img-bg {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+        }
+
+        .carousel-slide-img-character {
+          position: absolute;
+          width: 100%;
+          height: 172px;
+          left: 0;
+          bottom: 0;
+          margin-top: -12px;
+
+          object-fit: cover;
+          transform-origin: bottom center;
+          transition: transform 0.2s ease-in-out;
+        }
+      }
+
+      .carousel-slide-description {
+        h2 {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 18px;
+          transition: color 0.2s ease-in-out;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .carousel-slide-description-subtitle {
+          font-size: 14px;
+          font-weight: 400;
+          transition: color 0.2s ease-in-out;
+        }
+
+
+        .carousel-slide-description-genre {
+          color: #0000007a;
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 12px;
+    gap: 12px;
+
+    .carousel-button {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: inherit;
+      border-radius: 50%;
+      border: 1px solid #00000014;
+      padding: 0;
+      margin: 0;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background: #00000014;
+      }
+    }
+  }
+}
