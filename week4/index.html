@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프론트엔드 스쿨 - 연습하지 않으면 발전하지 않는다</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- 왼쪽 컨텐츠 -->
+      <section class="content-left">
+        <p class="label">멋쟁이 사자처럼</p>
+        <h1 class="main-title">
+          <span class="title-line">연습하지 않으면,</span>
+          <span class="title-line highlight">누구나 발전하지</span>
+          <span class="title-line highlight">않는다.</span>
+        </h1>
+        <p class="description">
+          실용적이고 짜임새 있는 실습 예제와<br />
+          강의로 프론트엔드 개발 역량을<br />
+          마음껏 확장해보세요.
+        </p>
+        <div class="button-group">
+          <button class="btn btn-primary">프론트엔드 스쿨</button>
+          <button class="btn btn-secondary">커리큘럼 보기</button>
+        </div>
+      </section>
+
+              <!-- 오른쪽 기하학적 도형들 -->
+        <section class="content-right">
+            <div class="geometric-container">
+                
+                <!-- 상단 영역 (Row 1-2) -->
+                <div class="shape orange-donut-top"></div>
+                
+                <!-- 중상단 영역 (Row 2-3) -->
+                <div class="shape red-pill-top-left"></div>
+                <div class="shape black-quarter-circle-top-middle"></div>
+                <div class="shape yellow-circle-right"></div>   
+                
+                <!-- 중앙 영역 (Row 3-5) -->
+                <div class="shape red-circle-left"></div>
+                <div class="shape black-quarter-circle-bottom-middle"></div>
+                <div class="shape red-quarter-left"></div>
+                <div class="shape orange-half-right"></div>
+                <div class="shape orange-quarter-right-bottom"></div>
+                
+                <!-- 중앙 인물 이미지 -->
+                <div class="center-portrait">
+                    <div class="portrait-image">
+                        <img src="./assets/images/image_1.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- 하단 영역 (Row 5-6) -->
+                <div class="shape beige-quarter-left-bottom"></div>
+                <div class="shape red-quarter-left-bottom"></div>
+                <div class="shape red-quarter-right-bottom"></div>
+                <div class="shape red-rounded-rect-bottom"></div>
+                
+                <!-- 최하단 영역 (Row 6-7) -->
+                <div class="shape circle-outline-small-bottom"></div>
+                <div class="shape gray-half-circle-bottom"></div>
+                <div class="shape gray-pill-bottom"></div>
+                <div class="shape mixed-half-circle-bottom"><div class="shape orange-half-circle-left"></div><div class="shape yellow-half-circle-right"></div></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
